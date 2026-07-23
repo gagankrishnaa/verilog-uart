@@ -22,6 +22,11 @@ module uart_tx_test;
     #12 start = 1;
     #46 start = 0;
   end
+
+  initial begin
+    #500;
+    $finish;
+  end
   
   initial begin
     data_in = 8'b10110010;
